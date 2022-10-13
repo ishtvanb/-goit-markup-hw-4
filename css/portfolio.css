@@ -253,7 +253,7 @@ address {
 .description {
   width: 370px;
   padding: 20px 24px;
-  border: 1px solid red;
+  border: 1px solid #eeeeee;
   border-top: none;
 }
 
