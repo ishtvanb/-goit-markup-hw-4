@@ -129,6 +129,23 @@ address {
   margin-right: 50px;
 }
 
+.item .mailto-icon,
+.item .tell-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+  fill: var(--accent-color);
+}
+
+.tell-icon:hover,
+.tell-icon:focus {
+  fill: var(--accent-color);
+}
+
 .site-connect .item:last-child {
   margin-right: 0px;
 }
@@ -170,9 +187,14 @@ address {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url("../images/Img.jpg");
   background-color: var(--primary-background-color);
 }
 
