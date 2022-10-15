@@ -133,7 +133,7 @@ address {
 .item .tell-icon {
   vertical-align: middle;
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .mailto-icon:hover,
@@ -194,7 +194,7 @@ address {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("../images/Img.jpg");
+  background-image: url("../images/img.jpg");
   background-color: var(--primary-background-color);
 }
 
@@ -242,6 +242,20 @@ address {
 }
 
 /* Section */
+
+.features-item {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background: var(--secondary-background-color);
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
 
 .section-features {
   padding-top: 94px;
@@ -351,6 +365,52 @@ address {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
+}
+
+.team-socialnet {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-logo {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients {
+  text-align: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
 }
 
 /* Footer */
