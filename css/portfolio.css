@@ -126,6 +126,22 @@ address {
   margin-right: 50px;
 }
 
+.item .mailto-icon,
+.item .tell-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+  fill: var(--accent-color);
+}
+
+.tell-icon:hover,
+.tell-icon:focus {
+  fill: var(--accent-color);
+}
+
 .site-connect .item:last-child {
   margin-right: 0px;
 }

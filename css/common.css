@@ -133,7 +133,6 @@ address {
 .item .tell-icon {
   vertical-align: middle;
   margin-right: 10px;
-  fill: currentColor;
 }
 
 .mailto-icon:hover,
@@ -404,6 +403,7 @@ address {
 .clients-item {
   width: 170px;
   height: 92px;
+  padding: 16px 32px;
   margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
