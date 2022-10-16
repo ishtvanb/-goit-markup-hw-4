@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --primary-background-color: #2f303a;
+  --current-color: #afb1b8;
 }
 
 html {
@@ -385,4 +386,11 @@ address {
 .team-icon {
   width: 20px;
   height: 20px;
+  fill: var(--current-color);
+}
+
+.team-icon:hover,
+.team-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
