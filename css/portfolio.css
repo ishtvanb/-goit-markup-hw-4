@@ -130,6 +130,23 @@ address {
 .item .tell-icon {
   vertical-align: middle;
   margin-right: 10px;
+  fill: currentColor;
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+  fill: var(--accent-color);
+}
+
+.tell-icon:hover,
+.tell-icon:focus {
+  fill: var(--accent-color);
+}
+
+.item .mailto-icon,
+.item .tell-icon {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .mailto-icon:hover,
@@ -306,6 +323,8 @@ address {
 }
 
 .footer {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
@@ -319,10 +338,10 @@ address {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  margin-top: 20px;
 }
 
 .footer-list .link {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -338,4 +357,32 @@ address {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-color);
+}
+
+.footer-link {
+  display: block;
+  margin-left: 70px;
+  text-align: start;
+  width: 206px;
+  height: 80px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-socialnet {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
 }

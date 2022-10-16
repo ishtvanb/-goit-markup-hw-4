@@ -7,6 +7,7 @@
   --secondary-background-color: #f5f4fa;
   --primary-background-color: #2f303a;
   --background-color-active: #188ce8;
+  --client-icon-color-current: #afb1b8;
 }
 
 html {
@@ -41,7 +42,7 @@ ol {
 }
 
 button {
-  color: pointer;
+  cursor: pointer;
 }
 address {
   font-style: normal;
@@ -133,6 +134,7 @@ address {
 .item .tell-icon {
   vertical-align: middle;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .mailto-icon:hover,
@@ -198,7 +200,7 @@ address {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/img.jpg");
+    url("../images/hero/img.jpg");
   background-color: var(--primary-background-color);
 }
 
@@ -386,6 +388,11 @@ address {
   height: 20px;
 }
 
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--accent-color);
+}
+
 .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -405,8 +412,13 @@ address {
   height: 92px;
   padding: 16px 32px;
   margin-right: 30px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--client-icon-color-current);
   border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--accent-color);
 }
 
 .clients-item:last-child {
@@ -416,6 +428,12 @@ address {
 .clients-icon {
   width: 106px;
   height: 60px;
+  fill: var(--client-icon-color-current);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -425,6 +443,8 @@ address {
 }
 
 .footer {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
@@ -457,4 +477,27 @@ address {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-color);
+}
+
+.footer-link {
+  display: block;
+  margin-left: 70px;
+  text-align: start;
+  width: 206px;
+  height: 80px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-socialnet {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
 }
