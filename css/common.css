@@ -7,7 +7,7 @@
   --secondary-background-color: #f5f4fa;
   --primary-background-color: #2f303a;
   --background-color-active: #188ce8;
-  --client-icon-color-current: #afb1b8;
+  --current-color: #afb1b8;
 }
 
 html {
@@ -373,6 +373,13 @@ address {
   color: var(--secondary-text-color);
 }
 
+.socialnet {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
 .team-socialnet {
   display: flex;
   width: 206px;
@@ -383,14 +390,16 @@ address {
   justify-content: space-between;
 }
 
+.team-icon:hover,
+.team-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
 .team-icon {
   width: 20px;
   height: 20px;
-}
-
-.team-icon:hover,
-.team-icon:focus {
-  fill: var(--accent-color);
+  fill: var(--current-color);
 }
 
 .section-clients {
@@ -412,13 +421,15 @@ address {
   height: 92px;
   padding: 16px 32px;
   margin-right: 30px;
-  border: 1px solid var(--client-icon-color-current);
+  border: 1px solid var(--current-color);
   border-radius: 4px;
+  background-color: var(--white-color);
 }
 
 .clients-item:hover,
 .clients-item:focus {
-  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  background-color: var(--white-color);
 }
 
 .clients-item:last-child {
@@ -428,7 +439,7 @@ address {
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--client-icon-color-current);
+  fill: var(--current-color);
 }
 
 .clients-icon:hover,
