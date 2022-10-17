@@ -397,6 +397,10 @@ address {
   border-radius: 50%;
   background-color: transparent;
 }
+.socialnet:hover,
+.socialnet:focus {
+  background-color: var(--accent-color);
+}
 
 .team-icon {
   width: 20px;
