@@ -457,7 +457,6 @@ address {
 
 .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
-  border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
