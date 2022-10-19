@@ -384,32 +384,39 @@ address {
   display: flex;
   width: 206px;
   height: 44px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: 0;
   margin-right: 0;
   margin-top: 20px;
 }
 
-.socialnet {
+.socialnet-list {
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+}
+
+.socialnet-item {
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;
   background-color: transparent;
 }
-.socialnet:hover,
-.socialnet:focus {
+
+.socialnet-item:hover,
+.socialnet-item:focus {
   background-color: var(--accent-color);
+}
+
+.socialnet-item:hover .team-icon,
+.socialnet-item:focus .team-icon {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .team-icon {
   width: 20px;
   height: 20px;
   fill: var(--current-color);
-}
-
-.team-icon:hover,
-.team-icon:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
 }
