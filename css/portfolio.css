@@ -333,10 +333,14 @@ address {
 
 .footer {
   display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primary-background-color);
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
 }
 
 .address {
